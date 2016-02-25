@@ -6,6 +6,46 @@
     android:background="@color/colorPrimary"
     android:paddingTop="0dp"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
-    app:theme="@style/ThemeOverlay.AppCompat.Light">
+    app:theme="@style/ThemeOverlay.AppCompat.Light"
 
+    app:layout_scrollFlags="scroll|enterAlways" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/like"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"></ImageView>
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="120dp"
+            android:layout_height="23dp"
+            android:textColor="#FFF"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="Name"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/profile_pic"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+
+            android:textSize="11sp"
+            android:text="No. of posts : 2"
+            android:textColor="#FFF"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:id="@+id/posts"
+            android:layout_toRightOf="@+id/profile_pic"
+           />
+
+
+
+    </RelativeLayout>
 </android.support.v7.widget.Toolbar>
